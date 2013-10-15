@@ -3,7 +3,7 @@ require_relative '../language'
 describe Language do
 	
 	before :each do
-		@language = Language.new "../test.txt"
+		@language = Language.new "test_files/test.txt"
 	end
 
 	describe "#new" do
@@ -12,7 +12,7 @@ describe Language do
 		end
 
 		it "get a file" do
-			language = Language.new "test_files/test_f1.txt"
+			language = Language.new "test_files/test.txt"
 			language.should be_an_instance_of Language
 		end
 
@@ -40,7 +40,7 @@ describe Language do
 
 	describe "gets each language" do
 		it "gets each language and compares them to the input" do
-			@language.get_comparisons.length.should be == 5
+			@language.get_comparisons.length.should be == 4
 		end
 	end
 
