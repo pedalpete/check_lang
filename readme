@@ -1,0 +1,10 @@
+All files needed to use the language checker are included, the only gem required is for rspec to run the tests. 
+
+1. How to try it
+	open a terminal
+	go to the diretory where check_lang was unpacked
+	type 'ruby index.rb'
+	I have included test files in the test_files folder, for example to try french type test_folder/test_f.txt
+
+The only languages currently included in the package are french, german, spanish and english. More can easily be added by selecting some text in the appropriate language, saving it to a file, and using the convert.rb to clean up the new language. Then name the language appropriately so it can be identified properly. 
+
